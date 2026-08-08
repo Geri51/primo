@@ -4,6 +4,11 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
+main {
+    width: 400px;
+    padding: 30px;
+    margin: 30px auto;
+}
 
 h1 {
     color: orange;
