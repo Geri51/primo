@@ -8,6 +8,7 @@ main {
     width: 400px;
     padding: 30px;
     margin: 30px auto;
+    border: 2px solid white;
 }
 
 h1 {
