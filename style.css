@@ -1,28 +1,80 @@
 body {
-    background-image:url("C:/Users/GERARD DEMIS/Documents/GitHub/primo/images/639542199_1471317384689513_3227602130731469174_n.jpg");
-    color: white;
+    background-image: url("images/639542199_1471317384689513_3227602130731469174_n.jpg");
+    color: blue;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 main {
-    width: 400px;
-    padding: 30px;
-    margin: 30px auto;
-    border: 2px solid white;
+    width: 450px;
+    height: 300px;
+    margin: 10px auto;
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+   gap: 50px;
+   flex-wrap: wrap;
+  align-content: space-between;
+}
+nav a {
+    flex: 1;
+    display: inline-block;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px red;
+
+}
+nav a:hover {
+    background-color: orange;
+    transition: 1.5s;
+}
+nav a:first-child{
+    flex: 3;
+    transform: translateX(-50px);
+}
+.titolo {
+    color: green;
+}
+#home {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 42px;
+    margin: 30px;
+    width: 500px;
+    height: 80px;
+    box-shadow: 0px 0px 10px red;
 }
 
-h1 {
-    color: orange;
-    font-size: 42px;
+#home:hover {
+    background-color: orange;
+    transition: 1.5s;
 }
 
 p {
     font-size: 20px;
+    transition: 1.5s;
+}
+p:hover {
+    color: orange;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 600px) {
+    p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    p {
+        font-size: 18px;
+    }
 }
 
 button {
-    background-image: url("C:/Users/GERARD DEMIS/Documents/GitHub/primo/images/639542199_1471317384689513_3227602130731469174_n.jpg");
-    color: white;
+    background-color: orange;
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
