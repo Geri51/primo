@@ -6,15 +6,21 @@ body {
 }
 main {
     width: 450px;
-    height: 300px;
+    height: auto;
     margin: 10px auto;
 }
 nav {
     display: flex;
     justify-content: flex-start;
-   gap: 50px;
-   flex-wrap: wrap;
-  align-content: space-between;
+    height: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+nav a:first-child {
+    flex: 3;
+    transform: translateX(-50px);
 }
 nav a {
     flex: 1;
@@ -29,9 +35,22 @@ nav a:hover {
     background-color: orange;
     transition: 1.5s;
 }
-nav a:first-child{
-    flex: 3;
-    transform: translateX(-50px);
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.language-switcher a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.language-switcher a:hover {
+    color: orange;
 }
 .titolo {
     color: green;
@@ -47,7 +66,7 @@ nav a:first-child{
 }
 
 #home:hover {
-    background-color: orange;
+    background-color: greenyellow;
     transition: 1.5s;
 }
 
@@ -55,6 +74,14 @@ p {
     font-size: 20px;
     transition: 1.5s;
 }
+.kompetenzen {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
 p:hover {
     color: orange;
 }
